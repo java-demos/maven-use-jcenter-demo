@@ -1,9 +1,14 @@
-Maven Demo
-==========
+Maven Use JCenter Repository Demo
+=================================
 
-A very simple maven project demo.
+Add to POM.xml:
 
 ```
-mvn clean install
+<repositories>
+    <repository>
+        <id>jcenter</id>
+        <url>https://jcenter.bintray.com/</url>
+    </repository>
+</repositories>
 ```
 
