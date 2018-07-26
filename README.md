@@ -19,12 +19,20 @@ Add it to global `~/.m2/settings.xml`. If no such file, we can create it and giv
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
-    <repositories>
-        <repository>
-            <id>jcenter</id>
-            <url>https://jcenter.bintray.com/</url>
-        </repository>
-    </repositories>
+    <profiles>
+        <profile>
+            <id>global-jcenter-repo</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>jcenter</id>
+                    <url>https://jcenter.bintray.com/</url>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
 </settings>
 ```
 
