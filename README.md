@@ -23,7 +23,7 @@ Add it to global `~/.m2/settings.xml`. If no such file, we can create it and giv
         <profile>
             <id>global-jcenter-repo</id>
             <activation>
-                <activeByDefault>false</activeByDefault>
+                <activeByDefault>true</activeByDefault>
             </activation>
             <repositories>
                 <repository>
